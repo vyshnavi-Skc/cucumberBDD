@@ -1,8 +1,0 @@
-package runners;
-
-import org.testng.annotations.Test;
-
-@cucumberOptions
-public class GooglepageRunner {
-	
-}

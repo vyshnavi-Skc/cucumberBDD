@@ -1,9 +1,0 @@
-package runners;
-
-import org.testng.annotations.Test;
-
-public class GooglepageRunner {
-  @Test
-  public void f() {
-  }
-}
