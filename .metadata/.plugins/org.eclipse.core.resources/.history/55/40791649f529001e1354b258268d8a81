@@ -1,0 +1,22 @@
+package stepDefs;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class GoogleStepDef {
+	
+	@Given("User launch google page")
+	public void user_launch_google_page() {
+
+	}
+	@When("search Java Tutorial")
+	public void search_java_tutorial() {
+	
+	}
+	@Then("Should display Java result page")
+	public void should_display_java_result_page() {
+	 
+	}
+
+}

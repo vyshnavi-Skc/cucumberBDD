@@ -1,0 +1,2 @@
+cucumber.publish.enabled=true  //publish the reports in the cloud
+cucumber.publish.quiet=true

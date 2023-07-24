@@ -1,0 +1,11 @@
+package runners;
+
+import org.testng.annotations.Test;
+
+import io.cucumber.testng.CucumberOptions;
+
+@CucumberOptions(features="//src//test//resources//GoogleSearchPage.feature"
+		)
+public class GooglepageRunner {
+	
+}

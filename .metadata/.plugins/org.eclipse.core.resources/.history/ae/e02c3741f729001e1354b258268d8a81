@@ -1,0 +1,14 @@
+package runners;
+
+import org.testng.annotations.Test;
+
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+
+@CucumberOptions(
+		features = "src\\test\\resources\\features\\GoogleSearchPage.feature",     //relative path for the feature file, if there are multiple fiels, when we can give upto only package name
+		glue= "stepDefs"														//package name:stepDefs 
+		)
+public class GooglepageRunner extends AbstractTestNGCucumberTests {
+	
+}
