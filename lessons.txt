@@ -1,0 +1,35 @@
+How to check if we have given the stepdef for all the steps:
+1) right click on the project ->configure -> convert to cucumber project ->it will take long time to make every time
+2) by default: it will run one by one and fail only once it reaches the steps whcih has no stepdef defined
+to overcome this we have option dryrun, by which it will not run  it ensures that if we have the implementation
+
+@cucumberOptions(plugin = {"usage"})
+for reports
+
+Rerun plugin: using it we can create the failed report file 
+	need to create runner file and using@we will provide the path fo the failedscenarios.txt file (report file generated with rerun option)
+	
+	
+	extend report in cucumber:
+	we need 2 dependencies for using extend reports
+	<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+	<dependency>
+	    <groupId>com.aventstack</groupId>
+	    <artifactId>extentreports</artifactId>
+	    <version>5.0.9</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
+	<dependency>
+	    <groupId>tech.grasshopper</groupId>
+	    <artifactId>extentreports-cucumber7-adapter</artifactId>
+	    <version>1.9.2</version>
+	</dependency>
+	We have selceted 1.9.2 which i most suitable with testng and selenium versions
+	
+	After this we need to include a plugin in runner class, and create the extent.properties file to specific properties for creating extent report
+	
+	
+	hooks in cucumber  is similar to the before and after anootations in testng selenium
+	
+	
+
