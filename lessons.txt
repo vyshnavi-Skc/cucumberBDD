@@ -27,9 +27,38 @@ Rerun plugin: using it we can create the failed report file
 	We have selceted 1.9.2 which i most suitable with testng and selenium versions
 	
 	After this we need to include a plugin in runner class, and create the extent.properties file to specific properties for creating extent report
+	Parameterisation
+		at scenario elvel
+			using examples or without it
+		at step level
+			Data tables -it is an object to store the value at the step level
+				list of list  ->only values
+				list of maps ->header and values
+				
+		Parameters  -we can have any type of parameters like int, string, float etc...
+		regexoperation in generic way
+		doc string-can we passed as an arguemnt but not at step level
 	
 	
-	hooks in cucumber  is similar to the before and after anootations in testng selenium
+	Tags at scenario level or feature level
+	Feature level tag: all the scenarios in the feature will inherit this tag
+	
+	And or and not are like logical operators
+				
+	hooks in cucumber  is similar to the before and after annotations in testng selenium
+	
+	Passing data at scenario level
+	Passing data at step level
+	
+	Passing the content and dynamic variable in the text and validating it
+	
+	Tags ->and or not
+	hooks:
+	Before scenario, before step level, Before feature level
+	
+	tagged hooks
+	
+	
 	
 	
 
