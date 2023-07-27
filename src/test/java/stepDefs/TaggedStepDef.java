@@ -8,14 +8,26 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 
 public class TaggedStepDef {
-	
-	@Before("@SmokeTest")
+	@Before(value="@SmokeTest" ,order=2)
+//	@Before("@SmokeTest")
+	//@Before(order=2)
 	public static void initEdge() {
 		System.out.println("edge before each scenario...........");
 	}
-	@Before("@RegressionTest")
+	//@Before(order=3)
+	@Before(value="@RegressionTest" ,order=3)
+	//@Before("@RegressionTest")
 	public static void initChrome() {
 		System.out.println("Chrome before each scenario...........");
+	}
+	@Before(value="@RegressionTest" ,order=1)
+	//@Before(order=1)
+	public void readPropertyReg() {
+		System.out.println("reading from property file regression");
+	}
+@Before(value="@SmokeTest" ,order=1)
+	public void readPropertySmoke() {
+		System.out.println("reading from property file smoke test");
 	}
 	
 	//At testng if we need to run any class as befpore and after all scenarios or tests then it needs to be declared as static method

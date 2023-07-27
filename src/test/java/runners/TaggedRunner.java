@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 		features="src\\test\\resources\\taggedFeatures",
 		glue= "stepDefs",
 		monochrome=true,
-		tags="@Phase3"
+		tags="@SmokeTest"
 		//tags="@SmokeTest"
 		//tags="@RegressionTest"
 		//tags="@SmokeTest or @RegressionTest"
